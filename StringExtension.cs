@@ -16,6 +16,18 @@ namespace PadawansTask7
             }
             else
             {
+                int sumnul = 0;
+                for (int i = 0; i < array.Length; i++)
+                {
+                    if (array[i] == null)
+                    {
+                        sumnul++;
+                    }
+                }
+                if (sumnul == array.Length)
+                {
+                    throw new ArgumentNullException();
+                }
                 for (int count = 0; count < array.Length; count++)
                 {
                     for (int i = 0; i < array.Length - 1; i++)
