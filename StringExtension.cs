@@ -8,6 +8,10 @@ namespace PadawansTask7
         {
             if ( array == null)
             {
+                throw new ArgumentNullException();
+            }
+            else if( array.Length == 0)
+            {
                 throw new ArgumentException();
             }
             else
